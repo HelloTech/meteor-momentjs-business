@@ -14,7 +14,7 @@ Package.onUse(function (api) {
     api.versionsFrom('1.2.0.2');
     api.use([
         'ecmascript',
-        'momentjs:moment'
+        'momentjs:moment@2.10.0'
     ]);
     api.addFiles('meteor-momentjs-business.js');
 });
