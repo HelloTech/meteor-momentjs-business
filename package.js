@@ -1,6 +1,6 @@
 Package.describe({
     name: 'hellotech:meteor-momentjs-business',
-    version: '0.0.1',
+    version: '0.0.2',
     // Brief, one-line summary of the package.
     summary: 'MomentJS extension for business days calculations (without iteration loops)',
     // URL to the Git repository containing the source code for this package.
@@ -13,14 +13,12 @@ Package.describe({
 Package.onUse(function (api) {
     api.versionsFrom('1.2.0.2');
     api.use([
-        'ecmascript',
         'momentjs:moment@2.10.0'
     ]);
     api.addFiles('meteor-momentjs-business.js');
 });
 
 Package.onTest(function (api) {
-    api.use('ecmascript');
     api.use('tinytest');
     api.use('hellotech:meteor-momentjs-business');
     api.addFiles('meteor-momentjs-business-tests.js');
